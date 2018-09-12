@@ -22,7 +22,8 @@
            }
 		   function setJson(string)
 		   {
-		   var data=string;
+		   
+		   var data=JSON.stringify(string).toString();
 		     document.getElementById('JsonDiv').innerHTML = data;
 		   console.log(data);
 		   }
