@@ -17,8 +17,9 @@
            {
 			   var id="1234567";
 			   var obj={"id":"123","name":"Sunil"};
-			   			   console.log(obj);
-        	   AndroidFunction.startActivity(id,obj);
+			   			   console.log(obj.toString());
+						   console.log(typeof(JSON.stringify(obj)));
+        	   AndroidFunction.startActivity(id,obj.toString());
            }
         </script>
     </head>
