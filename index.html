@@ -20,11 +20,11 @@
 			   			console.log(JSON.stringify(obj).toString());
         	   AndroidFunction.startActivity(id,JSON.stringify(obj).toString(),obj);
            }
-		   function setJson(datas)
+		   function setJson(data)
 		   {
-		   var data=JSON.parse(datas);
-		     document.getElementById('JsonDiv').innerHTML = data;
-		   console.log(data);
+		   var datas=JSON.parse(data);
+		     document.getElementById('JsonDiv').innerHTML = datas;
+		   console.log(datas);
 		   }
         </script>
     </head>
