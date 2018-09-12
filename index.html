@@ -16,11 +16,8 @@
 		    function startActivity()
            {
 			   var id="1234567";
-			   var obj={"id":"123","name":"Sunil"};
-			   			console.log(JSON.stringify(obj).toString());
-						var jsonObjJSON=JSON.parse(JSON.stringify(obj).toString())
-						console.log(JSON.parse(JSON.stringify(obj).toString()));
-        	   AndroidFunction.startActivity(id,JSON.stringify(obj).toString(),jsonObjJSON);
+			   var obj='{"id":"123","name":"Sunil"}';
+        	   AndroidFunction.startActivity(id,JSON.stringify(obj).toString(),obj);
            }
         </script>
     </head>
