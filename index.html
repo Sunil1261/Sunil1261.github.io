@@ -22,6 +22,7 @@
            }
 		   function setJson(string)
 		   {
+		     document.getElementById('JsonDiv').innerHTML = string;
 		   console.log(string);
 		   }
         </script>
@@ -43,5 +44,6 @@
 
             id="btnStart" onclick="javascript:return startActivity();" /> 
         </div>  
+		<div id="JsonDiv"></div>
     </body>
 </html>
