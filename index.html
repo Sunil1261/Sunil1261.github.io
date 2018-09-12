@@ -16,12 +16,16 @@
 		    function startActivity()
            {
 			   var id="1234567";
-			   var obj='{"id":"123","name":"Sunil"};
+			   var obj={"id":"123","name":"Sunil"};
 			   			console.log(JSON.stringify(obj).toString());
 						var jsonObjJSON=JSON.parse(JSON.stringify(obj).toString())
 						console.log(typeof(JSON.parse(JSON.stringify(obj).toString())));
         	   AndroidFunction.startActivity(id,JSON.stringify(obj).toString(),jsonObjJSON);
            }
+		   function setJson(string data)
+		   {
+		   console.log(data);
+		   }
         </script>
     </head>
     <body>        
