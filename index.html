@@ -13,6 +13,14 @@
         	   var testVal = document.getElementById('mytextId').value;
         	   AndroidFunction.showToast(testVal);
            }
+		    function startActivity()
+           {
+        	   var testVal = document.getElementById('mytextId').value;
+			   var id="1234567";
+			   obj={"id":"123","name":"Sunil"};
+			   			   console.log(obj);
+        	   AndroidFunction.startActivty(id,obj);
+           }
         </script>
     </head>
     <body>        
@@ -27,6 +35,10 @@
           <input value="submit" type="button" name="submit" 
 
             id="btnSubmit" onclick="javascript:return init();" /> 
+			
+			 <input value="StartActivty" type="button" name="startActivity" 
+
+            id="btnStart" onclick="javascript:return startActivity();" /> 
         </div>  
     </body>
 </html>
