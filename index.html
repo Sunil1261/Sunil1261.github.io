@@ -20,9 +20,9 @@
 			   			console.log(JSON.stringify(obj).toString());
         	   AndroidFunction.startActivity(id,JSON.stringify(obj).toString(),obj);
            }
-		   function setJson(string)
+		   function setJson(datas)
 		   {
-		   var data=string.toString();
+		   var data=datas.toString();
 		     document.getElementById('JsonDiv').innerHTML = data;
 		   console.log(data);
 		   }
